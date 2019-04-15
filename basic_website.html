@@ -28,12 +28,6 @@ body {
     padding: 1em;
     text-align: center;
 }
-.side-bar {
-    float: left;
-    width: 25%;
-    background-color: #feda6a;
-    padding: 1em;
-    }
 
 .clearfix {
   overflow: auto;
@@ -61,7 +55,7 @@ body {
     border-radius: 15px 50px;
     background: rgb(71, 73, 67); 
     position: relative;
-    right: 10px;
+    right: 10px;                                                        <h2>District Six Museum</h2>
 
   }
 .city-photo{
@@ -86,20 +80,29 @@ table,th,td{
     border-collapse: collapse;
 }
 .iziko{position: relative;
-    float: right;
-    margin: 0 0 1em 1em;
-    width: 300px;}
+    float: left;
+    margin: 1em 1em 0 0;
+    }
 .good-hope{position: relative;
     float: left;
     margin: 1em 1em 0 0;
-    width: 290px;
+}
+
+.first-city{
+    display: flex;
+}
+.second-city{
+    display: flex;
+}
+.third-city{
+    display: flex;
 }
 .Third-Content ul li{padding-top: 16px;
    padding-bottom: 16px;
 }
-.district-six{position: relative;
-    float: right;
-    margin: 0 0 1em 1em;}
+.district-six{
+    float: left;
+    margin: 1em 1em 0 0;}
 </style>
 
 <body style="margin-top:1px;margin-left: 1px;margin-bottom: 1px;margin-right: 1px;">
@@ -113,18 +116,6 @@ table,th,td{
                     </ul>
             </div>
             <div class="main" >
-                    <div class="side-bar" >
-                            <h2>Side Bar</h2>
-                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, 
-sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
-Pellentesque nec nam aliquam sem et tortor consequat id. 
-Elit scelerisque mauris pellentesque pulvinar pellentesque habitant. 
-Aliquam ut porttitor leo a. Quis eleifend quam adipiscing vitae proin. 
-Ut faucibus pulvinar elementum integer enim neque volutpat. 
-Pellentesque diam volutpat commodo sed egestas egestas. 
-Vel fringilla est ullamcorper eget nulla facilisi etiam dignissim diam. 
-Augue mauris augue neque gravida in fermentum et sollicitudin ac. 
-                            </div>
                             <div class="main clearfix" >
                                     <div class="content" >
                                             <div class="First-Content">
@@ -168,31 +159,32 @@ Augue mauris augue neque gravida in fermentum et sollicitudin ac.
                                                           </tr>
                                                       </table>
                                                     </div>
+                                                    <h2 id="Historic places in Cape Town">Historic Places In Cape Town:</h2>
                                                 <div class="Third-Content">
-                                                        <header>
-                                                            <h2 id="Historic places in Cape Town">Historic Places In Cape Town:</h2>
-                                                        </header>
-                                                        <h4 style="padding-top:50px;">District Six Museum</h4>
-                                                        <img src="4.jpg" class="district-six" style="width:150px;height:200px;margin-left:0px;">
-                                                        <ul style="padding-bottom:40px;margin-bottom: 60px;">
+                                                        <div class="first-city">
+                                                        <img src="4.jpg" class="district-six" style="width:200px;height:200px;">
+                                                        <ul style="padding-left:16px;">
                                                             <li>Small but intense museum documenting the displacement and destruction policies not all that long ago</li>
                                                             <li>The materials used to build the Castle were local and included rock cut from the granite outcrop on Signal Hill, and blue slate and shells – transported from Robben Island</li>
                                                             <li>This museum provides great intro in the dark past of the city and country</li>
                                                         </ul>
-                                                        <h4 style="padding-top:100px;">Castle Of Good Hope:</h4>
-                                                        <img src="1.jpg" class="good-hope" style="width:150px;height:200px;">
-                                                        <ul style="padding-bottom:40px;margin-bottom: 60px;">
+                                                        </div>
+                                                        <div class="second-city">
+                                                        <img src="1.jpg" class="good-hope" style="width:200px;height:200px;">
+                                                        <ul style="padding-left:16px;">
                                                             <li>The first stone was laid on 2 January 1666 and it was completed by April 1679</li>
                                                             <li>Elit mauris pnar pellentesque habitant. Elit scelerisque mauris pellentesque pulvinar pellentesque habitant.</li>
                                                             <li>The Castle of Good Hope was referred to as “Kui keip” (Stone Kraal) by the Khoi and sometimes “Citadel” by Dutch settlers</li>
                                                         </ul>
-                                                        <h4 style="padding-top: 100px;">Iziko Museum:</h4>
-                                                        <img src="2.JPG" class="iziko" style="width:150px;height:200px;margin-left: 0px;">
-                                                        <ul style="padding-bottom:40px;margin-bottom: 100px;">
+                                                        </div>
+                                                        <div class="third-city">
+                                                        <img src="2.JPG" class="iziko" style="width:200px;height:200px;margin-left: 0px;">
+                                                        <ul style="padding-left:16px;">
                                                             <li>The Iziko Museum was founded by Lord Charles Somerset in 1825 as a general museum comprising natural history</li>
                                                             <li>The Museum houses more than one and a half million specimens of scientific importance.</li>
                                                             <li>For nearly 200 years scientists at the Museum have been adding to these collections and studying them.</li>
                                                         </ul>
+                                                        </div>
                                                     </div>
                                         </div>       
                                 </div>
