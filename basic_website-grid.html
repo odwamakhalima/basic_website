@@ -4,32 +4,133 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <meta http-equiv="X-UA-Compatible" content="ie=edge">
-        <link rel="stylesheet" href="simple-grid.css">
         <title>Odwa-Makhalima</title>
     </head>
+<style>
+body {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+    width: 100%;
+}
+.header {
+    padding: 1em;
+    background-color: #DFDCE3;
+    background-image: url(6.jpg);
+    background-size: 100% 100%;
+}
+.main {
+    padding: 10px;
+    margin: 0 auto;
+}
+
+.footer {
+    background-color: #1d1e22;
+    padding: 1em;
+    text-align: center;
+}
+
+.clearfix {
+  overflow: auto;
+  zoom: 1;
+  padding-top: 1px;
+  padding-bottom: 1px;
+}
+.menu {
+    display: inline-block;
+    margin-bottom: 0px;
+    margin-top: 0px;
+    }
+.menu li {
+    list-style: none;
+    margin:  0em;
+    padding: 1em;
+}
+.a {
+    padding: 1em;
+    display: block;
+    width: 6em;
+}
+.menu a:hover {
+    background-color : white;
+}
+.photo {  
+    position: relative;
+    left: 200px;                                                     
+
+  }
+.city-photo{
+    float: left;
+    margin: 1em 1em 0 0;
+}
+.Which-City{
+    position: relative;
+}
+.First-Content {
+  display: inline-block;
+  vertical-align: top;
+  width: 75%;
+}
+table{width :250px;
+}
+th{text-align: left;
+}
+table,th,td{
+    border: 1px solid black;
+    border-collapse: collapse;
+}
+.iziko{
+    float: left;
+    width: 120px;
+    height: 100px;
+    margin: 1em;
+    padding:1em;
+    }
+.good-hope{
+    float: left;
+    width: 120px;
+    height: 100px;
+    margin: 1em;
+    padding:1em;
+}
+
+.district-six{
+    float: left;
+    width: 110px;
+    height: 100px;
+    margin: 1em;
+    padding:1em;
+    }
+</style>
 <body style="margin-top:1px;margin-left: 1px;margin-bottom: 1px;margin-right: 1px;">
              <div class="header" >
-                <img src="3.jpg" class="photo" style="width: 180px;height: 240px;">
-                <h3 style="color:white;">ODWA MAKHALIMA</h3>
-                <ul class="menu" style="position:relative;right:25px;">
-                        <li><a href="#Which City" style="color:silver">Which City</a></li>
-                        <li><a href="#A Foreign Language" style="color:silver">A Foreign Language</a></li>
-                        <li><a href="#Historic places in Cape Town" style="color:silver">Historic Places In Cape Town</a></li>
-                    </ul>
+                 <div style="width:300px;">
+                <img src="3.jpg" class="photo" style="width: 90px;">
+                <h3 style="color:white;position: relative;bottom: 100px;">ODWA MAKHALIMA</h3>
             </div>
-            <div class="col" >
+                <div>
+                <ul class="menu" >
+                        <li><a href="#Which City" style="color:white">Which City</a></li>
+                        <li><a href="#A Foreign Language" style="color:white">A Foreign Language</a></li>
+                        <li><a href="#Historic places in Cape Town" style="color:white">Historic Places In Cape Town</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="main" >
                             <div class="main clearfix" >
-                                    <div class="col" >
-                                            <div class="col-8">
+                                    <div class="content" >
+                                            <div class="First-Content">
+                                                <header>
                                                     <h2 id="Which City">Which City</h2>
-                                                    <img src="5.jpg" class="city-photo" style="width: 200px;">
-                                               
+                                                    <img src="5.jpg" class="city-photo" style="width: 120px;height: 180px;">
+                                                    </a>
+                                                </header>
                                                 <h2 class="city"><u><b>TOKYO:</b></u></h2>
                                                 <p class="Which-City">I've chosen tokyo because i would like to visit the imperial palace one day.I also wanna visit the restuarants there because i hear that they are good.</p>
                                             </div>
-                                            <div class="col-7">
+                                            <div class="Second-Content">
+                                                    <header>
                                                         <h2 id="A Foreign Language">A Foreign Language</h2>
                                                         <p>I've chosen japanese because i love the way people pronounce the japanese words</p>
+                                                    </header>
                                                     <table>
                                                         <tr>
                                                             <th>English</th>
@@ -57,37 +158,34 @@
                                                           </tr>
                                                       </table>
                                                     </div>
-                                                <div class="col-9">
-                                                        <header>
-                                                            <h2 id="Historic places in Cape Town">Historic Places In Cape Town:</h2>
-                                                        </header>
-                                                        <h4>District Six Museum</h4>
-                                                        <img src="4.jpg" class="district-six" style="width:150px;height:200px;">
-                                                        <ul style="margin-left: 150px; position: relative;bottom: 210px;">
-                                                            <li>Small but intense museum documenting the displacement and destruction policies not all that long ago</li>
-                                                            <li>The materials used to build the Castle were local and included rock cut from the granite outcrop on Signal Hill, and blue slate and shells – transported from Robben Island</li>
-                                                            <li>This museum provides great intro in the dark past of the city and country</li>
+                                                    <h2 id="Historic places in Cape Town">Historic Places In Cape Town:</h2>
+                                                <div id="Third-Content">
+                                                        <div class="first-city" style="float:left;width:400px;padding:1em;">
+                                                        <img src="4.jpg" class="district-six">
+                                                           <li>Small but intense museum documenting the displacement and destruction policies not all that long ago.</li>  
+                                                           <li>The materials used to build the Castle were local and included rock cut from the granite outcrop on Signal Hill</li>
+                                                           <li>It provides great intro in the dark past of the city.</li>
+                                                        </div>
+                                                        <div class="second-city" style="float:left;width:400px;padding:1em;">
+                                                        <img src="1.jpg" class="good-hope">
+                                                           <li>The first stone was laid on 2 January 1666 and it was completed by April 1679.</li> 
+                                                           <li>Opened in1679, the Castle is the oldest surviving building in South Africa.</li>
+                                                           <li>The Castle of Good Hope was referred to as “Kui keip” by the Khoi and sometimes “Citadel” by Dutch settlers.</li>
+                                                        </div>
+                                                      <div class="third-city" style="float:left;width:400px;padding:1em;">
+                                                        <img src="2.JPG" class="iziko">
+                                                        <ul>
+                                                           <li>The Iziko Museum was founded by Lord Charles Somerset in 1825 as a general museum comprising natural history.</li> 
+                                                           <li>The Museum houses more than one and a half million specimens of scientific importance.</li> 
+                                                           <li>For nearly 200 years scientists at the Museum have been adding to these collections and studying them.</li> 
                                                         </ul>
-                                                        <h4>Castle Of Good Hope:</h4>
-                                                        <img src="1.jpg" class="good-hope" style="width:150px;height:200px;">
-                                                        <ul style="margin-left: 150px; position: relative;bottom: 210px;">
-                                                            <li>The first stone was laid on 2 January 1666 and it was completed by April 1679</li>
-                                                            <li>Elit mauris pnar pellentesque habitant. Elit scelerisque mauris pellentesque pulvinar pellentesque habitant.</li>
-                                                            <li>The Castle of Good Hope was referred to as “Kui keip” (Stone Kraal) by the Khoi and sometimes “Citadel” by Dutch settlers</li>
-                                                        </ul>
-                                                        <h4>Iziko Museum:</h4>
-                                                        <img src="2.JPG" class="iziko" style="width:150px;height:200px;">
-                                                        <ul style="margin-left: 150px; position: relative;bottom: 210px;">
-                                                            <li>The Iziko Museum was founded by Lord Charles Somerset in 1825 as a general museum comprising natural history</li>
-                                                            <li>The Museum houses more than one and a half million specimens of scientific importance.</li>
-                                                            <li>For nearly 200 years scientists at the Museum have been adding to these collections and studying them.</li>
-                                                        </ul>
+                                                        </div>
                                                     </div>
                                         </div>       
                                 </div>
             </div>
             <div class="footer" >
-                <h4>@Odwa-Makhalima inc</h4>
+                <h4>@Odwa-Makhalima</h4>
             </div>
 </body>
 </html>
