@@ -94,7 +94,7 @@ p {
 
 .left {
   float:left;
-  width: 190px;
+  width: 150px;
   padding: 10px;
 }
 
@@ -203,7 +203,7 @@ p {
 @media only screen and (min-width: 320px) {  /* 540px */
   .content {
     width: 80%;
-    padding: 1em;
+    padding-right: 1em;
   }
 }
 
