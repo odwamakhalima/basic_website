@@ -24,11 +24,6 @@ body {
   background-size: 100% 100%;
 }
 
-.footer {
-  background-color: #1d1e22;
-  padding: 1em;
-  text-align: center;
-}
 table{width :250px;
 }
 th{text-align: left;
@@ -203,11 +198,6 @@ p {
   width: 95%;
   padding-left: 1em;
 }
-@media(min-width:820px){
-  .Third-Content{
-  display: flex;
-}
-}
   .col-1 {
     width: 4.33%;
   }
@@ -261,11 +251,9 @@ p {
   .hidden-sm {
     display: block;
   }
-  
-@media only screen and (min-width: 60em) { /* 960px */
-  .container {
-    display: grid;
-    grid-template-columns: 48% 48% 48%;
-    grid-gap: 1em;
+
+@media only screen and (min-width: 700px) { 
+  .Third-Content{
+    display: flex;
   }
 }
