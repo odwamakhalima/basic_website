@@ -23,11 +23,11 @@ body {
   background-size: 100% 100%;
   background-repeat: no-repeat;
 }
-table{width :250px;
+.table{width :50px;
 }
-th{text-align: left;
+.th{text-align: left;
 }
-table,th,td{
+.table,th,td{
     border: 1px solid black;
     border-collapse: collapse;
 }
@@ -253,7 +253,7 @@ p {
   }
 
 @media only screen and (min-width: 700px) { 
-  .Third-Content{
+  .Container{
     display: flex;
   }
 }
